@@ -3,7 +3,7 @@ var MyPhoneNumberPlugin = {
 	getMyPhoneNumber: function(onSuccess, onError) {
 		console.log("at getMyPhoneNumber");
 		//return PhoneGap.exec(onSuccess, onError, "MyPhoneNumberPlugin", "getMyPhoneNumber", []);
-		return PhoneGap.exec("MyPhoneNumberPlugin.getMyPhoneNumber", GetFunctionName(onSuccess), GetFunctionName(onError));
+		return Cordova.exec("MyPhoneNumberPlugin.getMyPhoneNumber", GetFunctionName(onSuccess), GetFunctionName(onError));
 	}
 }
 
